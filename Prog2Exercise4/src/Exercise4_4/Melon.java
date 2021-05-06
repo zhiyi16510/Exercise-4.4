@@ -13,7 +13,7 @@ public class Melon extends Fruits {
 		price = 0;
 	}
 	
-	public Melon(String n, String t, char s, int q, int ca, double p) {
+	public Melon(String n, String t, char s, int q, int ca, double p) { //constructor with 6 arguments
 		super(n, t);
 		size = s;
 		quantity = q;
@@ -34,15 +34,15 @@ public class Melon extends Fruits {
 		}
 	}
 	
-	public int totalCalories() {
+	public int totalCalories() {  //overloading with no argument
 		return calories;
 	}
 	
-	public int totalCalories(int q) {
+	public int totalCalories(int q) {  //overloading with 1 argument
 		return calories*q;
 	}
 	
-	public String printUses() {
+	public String printUses() {  //overriding
 		return "\nMelon could help in reducing blood pressure";
 	}
 	
