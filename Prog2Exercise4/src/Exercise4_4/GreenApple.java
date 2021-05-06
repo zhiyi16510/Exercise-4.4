@@ -6,11 +6,11 @@ public class GreenApple extends Apple{
 		super(n, t, q, p, d);
 	}
 	
-	public String printUses() {
+	public String printUses() {  //overriding
 		return "\nThe pectin found in green apples can help you break down foods more efficiently";
 	}
 	
-	public String toString() {
+	public String toString() {   //overriding
 		return printUses();
 	}
 }
