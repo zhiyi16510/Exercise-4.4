@@ -11,7 +11,7 @@ public class Apple extends Fruits {
 		discount=0;
 	}
 	
-	public Apple(String n, String t, int q, double p, double d) {
+	public Apple(String n, String t, int q, double p, double d) {  //constructor with 5 arguments
 		super(n, t);
 		quantity = q;
 		price = p;
