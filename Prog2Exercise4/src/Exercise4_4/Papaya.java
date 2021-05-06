@@ -11,7 +11,7 @@ public class Papaya extends Fruits{
 		price = 0;
 	}
 	
-	public Papaya(String n, String t, String c, String col, double p) {
+	public Papaya(String n, String t, String c, String col, double p) {  //constructor with 5 arguments
 		super(n, t);
 		country = c;
 		colour = col;
@@ -28,15 +28,15 @@ public class Papaya extends Fruits{
 		}
 	}
 	
-	public String info() {
+	public String info() { //overloading
 		return "\nCountry\t\t: "+country+"\nColour\t\t: "+colour+"\nPrice\t\t: "+price;
 	}
 	
-	public String info(String c, String col) {
+	public String info(String c, String col) {  //overloading with 2 argument
 		return "\nCountry\t\t: "+c+"\nColour\t\t: "+col+"\nPrice\t\t: "+price;
 	}
 	
-	public String info(String c, String col, double p) {
+	public String info(String c, String col, double p) {  //overloading with 3 argument
 		return "\nCountry\t\t: "+c+"\nColour\t\t: "+col+"\nPrice\t\t: RM"+p;
 	}
 	
@@ -44,7 +44,7 @@ public class Papaya extends Fruits{
 		return "\nPapaya may reduce the risk of heart disease";
 	}
 	
-	public String toString() {
+	public String toString() {  //overriding
 		return printUses();
 	}
 }
